@@ -14,12 +14,12 @@ public class Movimentacao {
 	
 	// java beans - getters e setters
 	
-	//retorna o valor do atributo do objeto
+	// get retorna o valor do atributo do objeto
 	public LocalDate getData() {
 		return data;
 	}
 	
-	//define um valor para um atributo do objeto
+	//set define um valor para um atributo do objeto
 	public void setData(LocalDate data) {
 		this.data = data;
 	}
