@@ -6,7 +6,7 @@ import java.time.LocalDate;
 //lombok
 public class Movimentacao {
 	private LocalDate data;
-	private BigDecimal valor;
+	private Double valor;
 	private String cpfCnpj;
 	private String nomeCliente;
 	private Boolean estornada;
@@ -23,10 +23,10 @@ public class Movimentacao {
 	public void setData(LocalDate data) {
 		this.data = data;
 	}
-	public BigDecimal getValor() {
+	public Double getValor() {
 		return valor;
 	}
-	public void setValor(BigDecimal valor) {
+	public void setValor(Double valor) {
 		this.valor = valor;
 	}
 	public String getCpfCnpj() {
@@ -53,8 +53,15 @@ public class Movimentacao {
 	public void setTipo(TipoMovimentacao tipo) {
 		this.tipo = tipo;
 	}
+
+	@Override
+	public String toString() {
+		return "Movimentacao [data=" + data + ", valor=" + valor + ", cpfCnpj=" + cpfCnpj + ", nomeCliente="
+				+ nomeCliente + ", estornada=" + estornada + ", tipo=" + tipo + "]";
+	}
 	
-	// java beans - getters e setters
+	
+	
 	
 	
 }
