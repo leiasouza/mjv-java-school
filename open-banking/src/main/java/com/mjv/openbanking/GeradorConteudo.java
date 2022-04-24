@@ -19,10 +19,11 @@ public class GeradorConteudo {
 		
 		sb.append(movimentacao.getTipo().getSigla()); 
 		
-		if(movimentacao.getEstornada())
+		if(movimentacao.getEstornada()){
 			sb.append("1");
-		else
+		}else{
 			sb.append("0");
+		}
 		
 		return sb.toString();
 	

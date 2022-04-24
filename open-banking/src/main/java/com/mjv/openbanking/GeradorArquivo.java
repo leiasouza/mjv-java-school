@@ -2,7 +2,7 @@ package com.mjv.openbanking;
 
 import java.time.LocalDate;
 
-public class GeradorArquivo {
+public class GeradorArquivo{
 	public static void main(String[] args) {
 		Movimentacao mov1 = new Movimentacao();
 		mov1.setData(LocalDate.of(2022,4,16));
@@ -14,7 +14,7 @@ public class GeradorArquivo {
 		
 		GeradorConteudo gc = new GeradorConteudo();
 		String ConteudoGerador = gc.gerar(mov1);
-		
+		System.out.println(mov1);
 		
 		
 		

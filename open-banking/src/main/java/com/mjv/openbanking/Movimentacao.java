@@ -55,7 +55,7 @@ public class Movimentacao {
 	}
 
 	@Override
-	public String toString() {
+	public String toString(){
 		return "Movimentacao [data=" + data + ", valor=" + valor + ", cpfCnpj=" + cpfCnpj + ", nomeCliente="
 				+ nomeCliente + ", estornada=" + estornada + ", tipo=" + tipo + "]";
 	}
