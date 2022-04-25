@@ -1,27 +1,25 @@
 package com.mjv.openbanking;
 
-import java.math.BigDecimal;
 import java.time.LocalDate;
 
 //lombok
 public class Movimentacao {
+	//classe
 	private LocalDate data;
 	private Double valor;
-	private String cpfCnpj;
+	private String cpfCnpj ;
 	private String nomeCliente;
 	private Boolean estornada;
 	private TipoMovimentacao tipo;
 	
-	// java beans - getters e setters
-	
-	// get retorna o valor do atributo do objeto
+	//retorna o valor do atributo do objeto
 	public LocalDate getData() {
 		return data;
 	}
 	
-	//set define um valor para um atributo do objeto
-	public void setData(LocalDate data) {
-		this.data = data;
+	//define um valor para um atributo do objeto
+	public void setData(LocalDate data1) {
+		this.data = data1;
 	}
 	public Double getValor() {
 		return valor;
@@ -55,13 +53,11 @@ public class Movimentacao {
 	}
 
 	@Override
-	public String toString(){
+	public String toString() {
 		return "Movimentacao [data=" + data + ", valor=" + valor + ", cpfCnpj=" + cpfCnpj + ", nomeCliente="
 				+ nomeCliente + ", estornada=" + estornada + ", tipo=" + tipo + "]";
 	}
-	
-	
-	
+
 	
 	
 }

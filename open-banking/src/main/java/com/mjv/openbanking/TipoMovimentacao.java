@@ -2,7 +2,7 @@ package com.mjv.openbanking;
 
 public enum TipoMovimentacao {
 	RECEITA ("R") ,
-	DESPESA("D");
+	DESPESA ("D");
 	
 	private String sigla;
 	private TipoMovimentacao (String sigla) {
@@ -11,5 +11,4 @@ public enum TipoMovimentacao {
 	public String getSigla() {
 		return sigla;
 	}
-	
 }
