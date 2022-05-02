@@ -1,15 +1,9 @@
-package com.mjv.agualuz;
+package com.mjv.agualuz.notification.model;
 
-public class Cliente {
-
+public class Cadastro {
 	private String nome;
 	private String cpf;
-	
-	public Cliente (String nome, String cpf) {
-		this.nome = nome;
-		this.cpf = cpf;
-	}
-	
+	private Endereco endereco;
 	public String getNome() {
 		return nome;
 	}
@@ -22,6 +16,11 @@ public class Cliente {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-	
+	public Endereco getEndereco() {
+		return endereco;
+	}
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
 	
 }
